@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+        .relative1 {
+          position: relative;
+          border: solid blue 2px;
+        }
+
+        .relative2 {
+          position: relative;
+          top: -20px;
+          left: 20px;
+          border: solid red 2px;
+          background-color: white;
+          width: 500px;
+        }
+
+        .fixed {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 200px;
+          background-color: white;
+          border: solid rgb(251,186,19) 10px;
+
+        }
+        .relative {
+          position: relative;
+          width: 600px;
+          height: 400px;
+          border: solid hotpink 10px;
+          background-color: white;
+        }
+
+        .absolute {
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          width:300px;
+          height: 200px;
+          border: solid purple 10px;
+        }
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <!-- the position property has a bunch of possible values -->
+    <!-- static, the default value, a static element is said to be not positioned -->
+    <!-- relative, behaves the same way as static, unless you add properties -->
+
+<div class="relative1">
+  <p><code>relative</code> behaves the same as <code>static</code> unless you add some extra properties.</p>
+</div>
+
+<div class="relative2">
+  <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. </p>
+</div>
+    <!--fixed  -->
+
+    <div class="fixed">
+      <p> I will never move from here, never, ever</p>
+    </div>
+    <!-- absolute, positions element absolutely, relative to its parent element, if the parent element is positioned, if not positioned, the absolute element will position itself according to the body -->
+      <div class="relative">
+        This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.
+        <div class="absolute">
+          This element is absolutely-positioned. It's positioned relative to its parent.
+        </div>
+      </div>
+      <div class="fixed">
+        <p> I will never move from here, never, ever</p>
+      </div>
+
+  </body>
+</html>

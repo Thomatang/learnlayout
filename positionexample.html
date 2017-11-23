@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+    .container {
+      position: relative;
+      border: solid rgb(89,199,172) 5px;
+
+    }
+
+    nav {
+      position: absolute;
+      left:0;
+      top:0;
+      border: solid red 10px;
+      color: red;
+      width: 180px;
+    }
+    section{
+      margin-left: 200px;
+      border: solid rgb(251,186,19) 10px;
+
+    }
+    footer {
+      position: fixed;
+      bottom:0;
+      left: 70px;
+      height: 70px;
+      background-color: white;
+      width: 100%;
+      border: solid green 10px;
+
+    }
+    </style>
+    <title></title>
+  </head>
+  <body>
+<div class="container">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Taco Menu</li>
+            <li>Draft List</li>
+            <li>Hours</li>
+            <li>Directions</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <section> The margin-left style for sections makes sure there is room for the nav. Otherwise the absolute and static elements would overlap</section>
+    <section> Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+    <section> Notice what happens when you resize your browser. It works nicely!</section>
+
+
+
+</div>
+  </body>
+  <footer>  If you like it then you gotta put a footer on it. If you use a fixed header or footer, make sure there is room for it! I put a margin-bottom on the body. </footer>
+</html>
